@@ -1,0 +1,116 @@
+import styled from "styled-components";
+
+export const Container = styled.div`
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+`;
+
+export const InfoUser = styled.div`
+  height: 95%;
+  width: 256px;
+  border-radius: 12px;
+  background-color: #201c1cc1;
+  padding: 4px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+
+`;
+
+export const ProfilePic = styled.img`
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  object-fit: cover;
+`;
+
+export const TextContent = styled.div`
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Text = styled.h3`
+  font-size: 16px;
+  font-weight: 600;
+  color: #fdfcfa;
+  margin: 0;
+  margin-bottom: 4px;
+`;
+
+export const Notes = styled.textarea`
+  height: 95%;
+  max-height: 95%;
+  min-height: 95%;
+
+  width: 78%;
+  max-width: 78%;
+  min-width: 78%;
+
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  padding: 4px 8px;
+
+  font-size: 20px;
+  font-weight: 600;
+  color: #0b1411;
+  font-family: 'Quicksand', sans-serif;
+`;
+
+export const Button = styled.button`
+  height: 32px;
+  width: 32px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 192px;
+
+  svg{
+    height: 32px;
+    width: 32px;
+    color: #d80909;
+  }
+`;
+
+export const Loading = styled.div`
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 48px;
+  right: 16px;
+
+  svg{
+    width: 40px;
+    height: 40px;
+    color: #0b787b;
+  }
+`;
+
+export const SelectImage = styled.input`
+  display: none;
+`;
+export const SwitchImage = styled.label`
+  position: absolute;
+  top: 24px;
+  left: 24px;
+
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+
+  svg{
+    width: 28px;
+    height: 28px;
+    color: #fdfcfa;
+  }
+`;
